@@ -2,14 +2,16 @@
 
 namespace GameDevBuddies
 {
+    /// <summary>
+    /// Class responsible for mixing the influence of multiple <see cref="SkyVolumeBehaviour"/> clips on the track.
+    /// </summary>
     public class SkyVolumeMixerBehaviour : PlayableBehaviour
     {
         private float _defaultExposure;
-
         private float _assignedExposure;
-
         private SkyVolumeSettings _skyVolumeSettingsBinding;
 
+        /// <inheritdoc/>
         public override void ProcessFrame(Playable playable, FrameData info, object playerData)
         {
             _skyVolumeSettingsBinding = playerData as SkyVolumeSettings;

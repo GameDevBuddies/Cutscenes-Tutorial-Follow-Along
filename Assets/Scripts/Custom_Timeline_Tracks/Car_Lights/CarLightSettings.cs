@@ -3,6 +3,10 @@ using UnityEngine.Rendering.HighDefinition;
 
 namespace GameDevBuddies
 {
+    /// <summary>
+    /// Component responsible for updating the properties of the referenced lights and material. 
+    /// It updates them whenever any of the properties change, both in Editor and in the Play mode.
+    /// </summary>
     [ExecuteInEditMode]
     public class CarLightSettings : MonoBehaviour
     {
@@ -29,6 +33,10 @@ namespace GameDevBuddies
             UpdateSettings();
         }
 
+        /// <summary>
+        /// Function updates both the light settings and the material properties in order to 
+        /// apply changes to the car light.
+        /// </summary>
         public void UpdateSettings()
         {
             UpdateLightIntensity();

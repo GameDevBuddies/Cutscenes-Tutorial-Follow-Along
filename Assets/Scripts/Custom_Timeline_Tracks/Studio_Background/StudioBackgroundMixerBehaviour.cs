@@ -3,6 +3,10 @@ using UnityEngine.Playables;
 
 namespace GameDevBuddies
 {
+    /// <summary>
+    /// Class responsible for implementing mixing between multiple clips on the track in order to get the final influence
+    /// of all the clips for the current studio background colors.
+    /// </summary>
     public class StudioBackgroundMixerBehaviour : PlayableBehaviour
     {
         private Color _defaultStudioBackgroundBottomColor;
@@ -17,6 +21,7 @@ namespace GameDevBuddies
 
         private StudioBackgroundSettings _studioBackgroundSettingsBinding;
 
+        /// <inheritdoc/>
         public override void ProcessFrame(Playable playable, FrameData info, object playerData)
         {
             _studioBackgroundSettingsBinding = playerData as StudioBackgroundSettings;

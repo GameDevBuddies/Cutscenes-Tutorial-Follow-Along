@@ -2,6 +2,10 @@
 
 namespace GameDevBuddies
 {
+    /// <summary>
+    /// Script responsible for updating the materials for the studio background. It updates them whenever values 
+    /// change, both in Editor and in Play mode.
+    /// </summary>
     [ExecuteInEditMode]
     public class StudioBackgroundSettings : MonoBehaviour
     {
@@ -29,6 +33,9 @@ namespace GameDevBuddies
             UpdateStudioBackgroundSettings();
         }
 
+        /// <summary>
+        /// Function updates the current material properties in order to update the current look of the studio background.
+        /// </summary>
         public void UpdateStudioBackgroundSettings()
         {
             if(_studioBackgroundMaterial == null)

@@ -3,6 +3,10 @@ using UnityEngine.Playables;
 
 namespace GameDevBuddies
 {
+    /// <summary>
+    /// Class responsible for mixing multiple influences of <see cref="CarLightsBehaviour"/> clips on the track
+    /// in order to get the final current influence and apply it to the car lights.
+    /// </summary>
     public class CarLightsMixerBehaviour : PlayableBehaviour
     {
         private Color _defaultLightMaterialEmissiveColor;

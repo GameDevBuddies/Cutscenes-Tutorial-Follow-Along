@@ -4,6 +4,9 @@ using UnityEngine.Rendering.HighDefinition;
 
 namespace GameDevBuddies
 {
+    /// <summary>
+    /// Component responsible for updating the exposure property of the referenced sky volume profile.
+    /// </summary>
     [ExecuteInEditMode]
     public class SkyVolumeSettings : MonoBehaviour
     {
@@ -28,6 +31,9 @@ namespace GameDevBuddies
             UpdateSettings();
         }
 
+        /// <summary>
+        /// Function updates the current settings of the referenced <see cref="VolumeProfile"/>.
+        /// </summary>
         public void UpdateSettings()
         {
             if(_skyVolumeProfile == null)
